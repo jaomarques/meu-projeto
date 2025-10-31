@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: lab(39.33% 1.75 -4.57);
+    color: #3d3c3c;
+}
+.Cabeçalho{
+    background-color: lab(37.18% -0.69 -2.86);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Container-principal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.Cartão{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(49, 48, 48, 0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+.Cartão:hover{
+    transform: translateY(-5px);
+}
+.Rodape{
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: lab(31.26% 3.29 -34.75);
+    color: rgb(47, 160, 235);
+}
