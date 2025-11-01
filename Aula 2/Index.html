@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br"></html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +10,41 @@
     <header class="Cabeçalho">
         <h1>Meu site Legal</h1>
     </header>
-    <main class="Container-principal">
-        <article class="Cartão">
-            <h2>Artigo 1</h2>
-            <p>Este é um exemplo de como o conteúdo pode ser organizado e flexivel</p>
-        </article>
-        <article class="Cartão">
-            <h2>Artigo 2</h2>
-            <p>estilização inclui sombras e bordas arredondadas</p>
-        </article>
+    <div style="text-align: center; padding: 20px;">
+        <button id="btn-adicionar-cartao" style="padding: 20px 20px; font-size:16px; cursor: pointer;">
+  Adicionar Cartão
+</button>
 
-    </main>
+<main class="container-principal" style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px;">
+  <article class="cartao">
+    <h2>Artigo 1</h2>
+    <p>Este é um exemplo de como o conteúdo pode ser organizado e flexível.</p>
+  </article>
+</main>
+
+<style>
+  .cartao {
+    background: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  /* Estado inicial da animação */
+  .cartao.invisivel {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+</style>
+    </div>
     <footer class="Rodape">
         <p>© 2025 Meu site Legal</p>
     </footer>
+    <script src="script.js" defer ></script>
 </body> 
 </html>
 
