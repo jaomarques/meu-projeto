@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: lab(39.33% 1.75 -4.57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #3d3c3c; 
+}
+.form-container{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 25px;   
+    color: #3d3c3c;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-grup label{
+    display: block;
+    margin-bottom: 8px;
+    color: #3d3c3c;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #474646;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+
+    transition: border-color 0.3s;
+}
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color: #2fa0eb;
+    outline: none;
+}
+.btn{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease,transform 0.2s;
+}
+.btn:hover{
+    transform:scale(1.05);
+}
+.btn-principal{
+    background-color: hsl(204, 61%, 31%);
+    color: white;
+    
+}
+.btn-principal:hover{
+    background-color: hsl(205, 92%, 9%);
+}
+.btn-secundario{
+    background-color: hsl(0, 0%, 80%);
+    color: #6e3d3d;
+}
+.btn-secundario:hover{
+    background-color: hsl(0, 0%, 60%);
+}
+.button-group{
+    display: flex;
+    gap: 15px;
+}
