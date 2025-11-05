@@ -76,3 +76,24 @@ h2{
     display: flex;
     gap: 15px;
 }
+
+#mensagem-status{
+    margin-bottom: 20px;
+    padding: 15%;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+#mensagem-status.sucesso{
+    background-color: hsl(120, 60%, 80%);
+    color: hsl(120, 60%, 20%);
+    border: 1px solid hsl(120, 60%, 40%);
+    display: none;
+}
+#mensagem-status.erro{
+    background-color: hsl(0, 60%, 80%);
+    color: hsl(0, 60%, 20%);
+    border: 1px solid hsl(0, 60%, 40%);
+    display: none;
+}
